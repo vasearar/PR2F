@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Prodius Cătălin">
+  <title>PR2F</title>
+  <link rel="icon" type="image/x-icon" href="icon.svg">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+  body{
+    background-color: #A0AF9F;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  h1, p{
+    margin: 0;
+  }
+
+  h1{
+    font-family: "Bitter", serif;
+    font-size: 4rem;
+    font-weight: 600;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  p{
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    position: absolute;
+  }
+
+  .first{
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .second{
+    top: 25px;
+    right: 25px;
+  }
+
+  .circle{
+    background-color: black;
+    width: 35vw;
+    height: 100px;
+    border-radius: 50%;
+    border: #A0AF9F solid 2px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5%;
+    gap: 10px;
+    background-color: #A0AF9F;
+  }
+
+  @keyframes div1{
+    from{height: 50%;}
+    to{height: 2%;}
+  }
+
+  @keyframes div2{
+    from{height: 35%;}
+    to{height: 4%;}
+  }
+
+
+  .div1{
+    height: 50%;
+    animation: div1 3s alternate ease-in-out infinite;
+  }
+
+  .div2{
+    height: 35%;
+    animation: div2 3s alternate ease-in-out infinite;
+  }
+
+  .div3{
+    height: 7%;
+  }
+
+  .div4{
+    height: 4%;
+    animation: div2 3s alternate-reverse ease-in-out infinite;
+  }
+
+  .div5{
+    height: 2%;
+    animation: div1 3s alternate-reverse ease-in-out infinite;
+  }
+</style>
+<body>
+  <h1>PR2F</h1>
+  <p class="first">PENTAGRAM WARD</p>
+  <p class="second">VOLUME -2</p>
+  <main>
+    <div class="circle div1"></div>
+    <div class="circle div2"></div>
+    <div class="circle div3"></div>
+    <div class="circle div4"></div>
+    <div class="circle div5"></div>
+  </main>
+</body>
+</html>
